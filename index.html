@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refleksomierzacz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Refleksomierzacz</h1>
+    <div class="game-container">
+        <div id="gameArea" class="game-area"></div>
+        <div id="controls" class="controls">
+
+            <div id="gameModeSelection">
+                <label>
+                    <input type="radio" id="clickMode" name="gameMode" value="click" checked> Tryb kliknięcia
+                </label>
+                <label>
+                    <input type="radio" id="keyMode" name="gameMode" value="key"> Tryb klawiatury
+                </label>
+            </div>
+
+            <input type="number" id="numAttempts" min="1" value="5" placeholder="Liczba prób" />
+            <button id="startBtn">Start</button>
+            <button id="stopBtn" disabled>Stop</button>
+        </div>
+        <div id="stats" class="stats" style="display:none;">
+            <p>Najkrótszy czas reakcji: <span id="shortest"></span> ms</p>
+            <p>Najdłuższy czas reakcji: <span id="longest"></span> ms</p>
+            <p>Średni czas reakcji: <span id="average"></span> ms</p>
+        
+        </div>
+    </div>
+    <div class="rules-container">
+    
+        <div class="rule">
+            <h2>ZASADY GRY</h2>
+            Witaj w grze "Refleksomierzacz"! Twoim celem jest zmierzenie swojego czasu reakcji na zmianę koloru w obszarze do klikania. <br> <strong>Uwaga</strong>, tryb klawiatury (tryb gry, w którym zamiast klikania trzeba wciskać przycisk na klawiaturze) możesz wybrać tylko przed rozpoczęciem gry.
+            <br>Poniżej znajdziesz zasady gry:
+           
+            <h3>Przebieg Gry</h3>
+                Twoim zadaniem jest jak najszybsze kliknięcie w obszar do klikania, gdy zmieni on kolor. Im szybsza reakcja, tym lepszy wynik.
+                Po kliknięciu przycisku <strong>Start</strong> rozpoczynasz grę. Obszar do klikania zmienia kolor w losowych odstępach czasu.
+                Po zmianie koloru, jak najszybciej kliknij w obszar. Gra składa się z 5 prób(możesz zmienić ilośc prób przed rozpoczęciem gry). 
+    
+            <h3>Zakończenie Gry</h3>
+        
+                Po zakończeniu wszystkich prób gra kończy się automatycznie.
+                Możesz też w dowolnym momencie kliknąć przycisk <strong>Stop</strong>, aby zakończyć grę wcześniej.
+            
+            <h3>Statystyki</h3>
+            Po pierwszej próbie pod przyciskami pojawia się także panel statystyk, zostaje widoczny aż do następnego rozpoczęcia gry.
+            
+        </div>
+
+        <div class="tip">
+            <h3>Wskazówki</h3>
+        
+                Uważnie obserwuj obszar i bądź gotowy na zmianę koloru!
+                Im szybciej klikniesz po zmianie koloru, tym lepszy wynik uzyskasz.
+            
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
