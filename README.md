@@ -1,1 +1,1 @@
-Sprawdź (https://kstarzyckababik.github.io/refleksomierzacz/)
+Sprawdź https://kstarzyckababik.github.io/refleksomierzacz/
